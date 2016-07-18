@@ -11,4 +11,4 @@ workflow, life (why not?) and more stuff.
 I hope you like the contents that is going to be posted here, if you have any
 contribuition, please write it down in the comments bellow.
 
-Thanks you!
+Thank you!
