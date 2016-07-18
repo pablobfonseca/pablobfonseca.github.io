@@ -9,7 +9,7 @@
 title: Pablo Fonseca
 email: pablofonseca777@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  If I had eight ours to chop down a tree, I'd spend six hours sharpening my ax
+  If I had eight hours to chop down a tree, I’d spend six hours sharpening my ax.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://pablobfonseca.github.io" # the base hostname & protocol for your site
