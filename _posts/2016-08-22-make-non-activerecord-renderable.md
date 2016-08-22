@@ -2,7 +2,9 @@
 layout: post
 title:  "Make non ActiveRecord classes renderable"
 date:   2016-08-22 18:00
-categories: ruby, rails
+categories: 
+  - ruby
+  - rails
 ---
 
 In order to render a new partial without being an "Rails" object we can rewrite the method `to_patial_path` to do so:

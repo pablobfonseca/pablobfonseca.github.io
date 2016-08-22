@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Welcome to my blog</title>
-  <meta name="description" content="Welcome, this blog is a place to share information about web development,workflow, life (why not?) and more stuff.">
+  <title>Make non ActiveRecord classes renderable</title>
+  <meta name="description" content="In order to render a new partial without being an “Rails” object we can rewrite the method to_patial_path to do so:">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://pablobfonseca.github.io/2016/07/17/welcome-to-my-blog.html">
+  <link rel="canonical" href="http://pablobfonseca.github.io/ruby/rails/2016/08/22/make-non-activerecord-renderable.html">
   <link rel="alternate" type="application/rss+xml" title="Pablo Fonseca" href="http://pablobfonseca.github.io/feed.xml">
 </head>
 
@@ -57,18 +57,31 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Welcome to my blog</h1>
-    <p class="post-meta"><time datetime="2016-07-17T15:49:01-03:00" itemprop="datePublished">Jul 17, 2016</time></p>
+    <h1 class="post-title" itemprop="name headline">Make non ActiveRecord classes renderable</h1>
+    <p class="post-meta"><time datetime="2016-08-22T18:00:00-03:00" itemprop="datePublished">Aug 22, 2016</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Welcome, this blog is a place to share information about web development,
-workflow, life (why not?) and more stuff.</p>
+    <p>In order to render a new partial without being an “Rails” object we can rewrite the method <code class="highlighter-rouge">to_patial_path</code> to do so:</p>
 
-<p>I hope you like the contents that is going to be posted here, if you have any
-contribution, please write it down in the comments bellow.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Timeline</span>
+  <span class="k">def</span> <span class="nf">to_partial_path</span>
+    <span class="s2">"timeline/timeline"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+</div>
 
-<p>Thank you!</p>
+<p>Now we just need to create the view in <code class="highlighter-rouge">app/views/timeline/_timeline.htm.erb</code> and it’s going to work like a charm!</p>
+
+<p>or, we can extend the <code class="highlighter-rouge">ActiveModel::Naming</code> to make it works as well:
+<code class="highlighter-rouge">ruby
+class Timeline
+  extend ActiveModel::Naming
+end
+</code></p>
+
+<p><q>Happy coding!</q></p>
 
     <div id="disqus_thread"></div>
 <script type="text/javascript">
