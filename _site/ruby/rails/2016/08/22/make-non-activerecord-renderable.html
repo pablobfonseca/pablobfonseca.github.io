@@ -74,12 +74,13 @@
 
 <p>Now we just need to create the view in <code class="highlighter-rouge">app/views/timeline/_timeline.htm.erb</code> and it’s going to work like a charm!</p>
 
-<p>or, we can extend the <code class="highlighter-rouge">ActiveModel::Naming</code> to make it works as well:
-<code class="highlighter-rouge">ruby
-class Timeline
-  extend ActiveModel::Naming
-end
-</code></p>
+<p>or, we can extend the <code class="highlighter-rouge">ActiveModel::Naming</code> to make it works as well:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Timeline</span>
+  <span class="kp">extend</span> <span class="no">ActiveModel</span><span class="o">::</span><span class="no">Naming</span>
+<span class="k">end</span>
+</code></pre>
+</div>
 
 <p><q>Happy coding!</q></p>
 

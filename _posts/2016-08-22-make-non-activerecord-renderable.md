@@ -20,6 +20,7 @@ end
 Now we just need to create the view in `app/views/timeline/_timeline.htm.erb` and it's going to work like a charm!
 
 or, we can extend the `ActiveModel::Naming` to make it works as well:
+
 ```ruby
 class Timeline
   extend ActiveModel::Naming
