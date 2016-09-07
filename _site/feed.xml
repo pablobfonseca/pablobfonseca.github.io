@@ -6,9 +6,74 @@
 </description>
     <link>http://pablobfonseca.github.io/</link>
     <atom:link href="http://pablobfonseca.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 22 Aug 2016 18:03:20 -0300</pubDate>
-    <lastBuildDate>Mon, 22 Aug 2016 18:03:20 -0300</lastBuildDate>
+    <pubDate>Wed, 07 Sep 2016 19:12:37 -0300</pubDate>
+    <lastBuildDate>Wed, 07 Sep 2016 19:12:37 -0300</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Ruby - Introduction to ruby objects</title>
+        <description>&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;We’re going to go through the basics of Ruby objects in these series of articles and try to cover all you need to know to get started with Ruby.&lt;/p&gt;
+
+&lt;p&gt;Remeber that you can test the highlighted codes directly from your terminal
+opening the IRB (Interactive Ruby Shell), to do so, just type this in yout
+terminal:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
+irb
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So, let’s get started!&lt;/p&gt;
+
+&lt;h3 id=&quot;everything-is-an-object&quot;&gt;Everything is an object&lt;/h3&gt;
+&lt;p&gt;To make things happen using Ruby, one always puts oneself in the place of an object and then has conversations with other objects, telling them to do stuff.&lt;/p&gt;
+
+&lt;p&gt;Role-playing as an object in your program is an integral part of object-oriented programming. To know which object you are at the moment, one may use the keyword &lt;code class=&quot;highlighter-rouge&quot;&gt;self&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt; 
+&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; main&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;As you can see, if you don’t specify which object you are, you automatically play the role of the &lt;code class=&quot;highlighter-rouge&quot;&gt;main&lt;/code&gt; object that Ruby provides us by default.&lt;/p&gt;
+
+&lt;p&gt;We’ll delve into how one can play the role of different objects and why this is useful a little further down the line.&lt;/p&gt;
+
+&lt;h3 id=&quot;talking-to-objects&quot;&gt;Talking to objects&lt;/h3&gt;
+&lt;p&gt;One object interacts with another by using what are called &lt;code class=&quot;highlighter-rouge&quot;&gt;methods&lt;/code&gt;. More
+specifically, one object “calls or invokes the methods” of another object.&lt;/p&gt;
+
+&lt;p&gt;In the example below, we call the method &lt;code class=&quot;highlighter-rouge&quot;&gt;even?&lt;/code&gt; on the object that is the number &lt;code class=&quot;highlighter-rouge&quot;&gt;2&lt;/code&gt; by placing a period (&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;) after the object, then adding in the name of the
+method we want to invoke.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;even?&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;looking-up-methods&quot;&gt;Looking up methods&lt;/h3&gt;
+&lt;p&gt;Ruby objects are happy to tell you what methods they provide. You simply call the &lt;code class=&quot;highlighter-rouge&quot;&gt;methods&lt;/code&gt; method on them.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;methods&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; [:%, :&amp;amp;, :*, :+, :-, :/, :&amp;lt;, :&amp;gt;, :^, :|, :~, :-@, :**, :&amp;lt;=&amp;gt;, ...] and so on&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We’re going to continue talking about Ruby Objects in the next articles, so stay
+tuned!&lt;/p&gt;
+
+&lt;p&gt;“Happy coding!”&lt;/p&gt;
+</description>
+        <pubDate>Wed, 07 Sep 2016 19:10:00 -0300</pubDate>
+        <link>http://pablobfonseca.github.io/ruby/basics/beginners/2016/09/07/ruby-basics-introduction-to-objects.html</link>
+        <guid isPermaLink="true">http://pablobfonseca.github.io/ruby/basics/beginners/2016/09/07/ruby-basics-introduction-to-objects.html</guid>
+        
+        
+        <category>ruby</category>
+        
+        <category>basics</category>
+        
+        <category>beginners</category>
+        
+      </item>
     
       <item>
         <title>Make non ActiveRecord classes renderable</title>

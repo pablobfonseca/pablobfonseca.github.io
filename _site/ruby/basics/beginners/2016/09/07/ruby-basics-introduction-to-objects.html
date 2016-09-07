@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Pablo Fonseca</title>
-  <meta name="description" content="If I had eight hours to chop down a tree, I’d spend six hours sharpening my ax.
-">
+  <title>Ruby - Introduction to ruby objects</title>
+  <meta name="description" content="IntroWe’re going to go through the basics of Ruby objects in these series of articles and try to cover all you need to know to get started with Ruby.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://pablobfonseca.github.io/">
+  <link rel="canonical" href="http://pablobfonseca.github.io/ruby/basics/beginners/2016/09/07/ruby-basics-introduction-to-objects.html">
   <link rel="alternate" type="application/rss+xml" title="Pablo Fonseca" href="http://pablobfonseca.github.io/feed.xml">
 </head>
 
@@ -55,49 +54,81 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Ruby - Introduction to ruby objects</h1>
+    <p class="post-meta"><time datetime="2016-09-07T19:10:00-03:00" itemprop="datePublished">Sep 7, 2016</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Sep 7, 2016</span>
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="intro">Intro</h2>
+<p>We’re going to go through the basics of Ruby objects in these series of articles and try to cover all you need to know to get started with Ruby.</p>
 
-        <h2>
-          <a class="post-link" href="/ruby/basics/beginners/2016/09/07/ruby-basics-introduction-to-objects.html">Ruby - Introduction to ruby objects</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 22, 2016</span>
+<p>Remeber that you can test the highlighted codes directly from your terminal
+opening the IRB (Interactive Ruby Shell), to do so, just type this in yout
+terminal:
+<code class="highlighter-rouge">
+irb
+</code></p>
 
-        <h2>
-          <a class="post-link" href="/ruby/rails/2016/08/22/make-non-activerecord-renderable.html">Make non ActiveRecord classes renderable</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 18, 2016</span>
+<p>So, let’s get started!</p>
 
-        <h2>
-          <a class="post-link" href="/ruby/2016/07/18/underscore-ruby-secret-weapon.html">Underscore - Ruby Secret Weapon</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 17, 2016</span>
+<h3 id="everything-is-an-object">Everything is an object</h3>
+<p>To make things happen using Ruby, one always puts oneself in the place of an object and then has conversations with other objects, telling them to do stuff.</p>
 
-        <h2>
-          <a class="post-link" href="/2016/07/17/welcome-to-my-blog.html">Welcome to my blog</a>
-        </h2>
-      </li>
-    
-  </ul>
+<p>Role-playing as an object in your program is an integral part of object-oriented programming. To know which object you are at the moment, one may use the keyword <code class="highlighter-rouge">self</code>.</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">self</span> 
+<span class="c1"># =&gt; main</span>
+</code></pre>
 </div>
+<p>As you can see, if you don’t specify which object you are, you automatically play the role of the <code class="highlighter-rouge">main</code> object that Ruby provides us by default.</p>
+
+<p>We’ll delve into how one can play the role of different objects and why this is useful a little further down the line.</p>
+
+<h3 id="talking-to-objects">Talking to objects</h3>
+<p>One object interacts with another by using what are called <code class="highlighter-rouge">methods</code>. More
+specifically, one object “calls or invokes the methods” of another object.</p>
+
+<p>In the example below, we call the method <code class="highlighter-rouge">even?</code> on the object that is the number <code class="highlighter-rouge">2</code> by placing a period (<code class="highlighter-rouge">.</code>) after the object, then adding in the name of the
+method we want to invoke.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="mi">2</span><span class="p">.</span><span class="nf">even?</span>
+<span class="c1"># =&gt; true</span>
+</code></pre>
+</div>
+
+<h3 id="looking-up-methods">Looking up methods</h3>
+<p>Ruby objects are happy to tell you what methods they provide. You simply call the <code class="highlighter-rouge">methods</code> method on them.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="mi">1</span><span class="p">.</span><span class="nf">methods</span>
+<span class="c1"># =&gt; [:%, :&amp;, :*, :+, :-, :/, :&lt;, :&gt;, :^, :|, :~, :-@, :**, :&lt;=&gt;, ...] and so on</span>
+</code></pre>
+</div>
+
+<p>We’re going to continue talking about Ruby Objects in the next articles, so stay
+tuned!</p>
+
+<p>“Happy coding!”</p>
+
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+		var disqus_shortname = 'pablobfonseca'; // required: replace example with your forum shortname
+    // var disqus_developer = 1
+    // var disqus_url = 'http://example.com'
+
+		(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  </div>
+
+</article>
 
       </div>
     </div>
