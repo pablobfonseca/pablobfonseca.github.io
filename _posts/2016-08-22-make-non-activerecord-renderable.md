@@ -7,7 +7,7 @@ categories:
   - rails
 ---
 
-In order to render a new partial without being an "Rails" object we can rewrite the method `to_patial_path` to do so:
+In order to render a new partial without being a "Rails" object we can rewrite the method `to_partial_path` to do so:
 
 ```ruby
 class Timeline
