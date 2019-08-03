@@ -6,10 +6,10 @@ permalink: /about/
 
 Hi!
 
-I'm a Brazilian software developer focused on Ruby on Rails and Javascript, vim evangelist and coffee lover.
+I'm a Brazilian software engineer, passionate about programming, currently working as Ruby and Javascript Developer.
 
-I love coding and learning new things.
+I love to code and to learn new technologies.
 
-You can find more information on my [Linkedin](http://linkedin.com/in/pablobfonseca)
+You can find more information on my [Linkedin](http://linkedin.com/in/pablobfonseca) and my [Github](https://github.com/pablobfonseca) 
 
-Feel free to [drop a line](mailto:pablofonseca777@gmail.com)
+Feel free to [drop me a line](mailto:pablofonseca777@gmail.com)
