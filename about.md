@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi!
 
-I'm a Brazilian software engineer, passionate about programming, currently working as Ruby and Javascript Developer.
+I'm a Brazilian Software Engineer, passionate about programming, vim/emacs evangelist, currently working as Ruby and Javascript Developer.
 
 I love to code and to learn new technologies.
 
