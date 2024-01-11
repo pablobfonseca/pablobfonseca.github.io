@@ -4,7 +4,8 @@
       <div class="footer-col footer-col-6">
         <ul class="contact-list">
           <a href="mailto:{{site.email}}" target="_blank">Email</a>
-          <p>Written in vim and emacs :qall! & C-x C-s <3</p>
+          <p>Written in vim and emacs :qall! & C-x C-s <3< /p>
+          </p>
         </ul>
       </div>
 
@@ -33,49 +34,10 @@
   </div>
 </footer>
 
-<script>
-  window.intercomSettings = {
-    api_base: "https://api-iam.intercom.io",
-    app_id: "bjs6hrog",
-  };
-</script>
-
-<script>
-  // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/bjs6hrog'
-  (function () {
-    var w = window;
-    var ic = w.Intercom;
-    if (typeof ic === "function") {
-      ic("reattach_activator");
-      ic("update", w.intercomSettings);
-    } else {
-      var d = document;
-      var i = function () {
-        i.c(arguments);
-      };
-      i.q = [];
-      i.c = function (args) {
-        i.q.push(args);
-      };
-      w.Intercom = i;
-      var l = function () {
-        var s = d.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://widget.intercom.io/widget/bjs6hrog";
-        var x = d.getElementsByTagName("script")[0];
-        x.parentNode.insertBefore(s, x);
-      };
-      if (document.readyState === "complete") {
-        l();
-      } else if (w.attachEvent) {
-        w.attachEvent("onload", l);
-      } else {
-        w.addEventListener("load", l, false);
-      }
-    }
-  })();
-</script>
+<!-- Start of d3v-upscope Zendesk Widget script -->
+<script id="ze-snippet"
+  src="https://static.zdassets.com/ekr/snippet.js?key=f0127731-3c1d-4b30-bce8-462f79a8ecdb"></script>
+<!-- End of d3v-upscope Zendesk Widget script -->
 
 <script>
   // This will initiate Upscope connection. It's important it is added to all pages,
@@ -95,7 +57,7 @@
       var s = d.createElement("script");
       s.type = "text/javascript";
       s.async = true;
-      s.src = "https://code.upscope.xyz/CBTXV9rJw6.js";
+      s.src = "https://code.upscope.io/BnkDJTwz9a.js";
       var x = d.getElementsByTagName("script")[0];
       x.parentNode.insertBefore(s, x);
     };
@@ -106,4 +68,9 @@
   })(window, window.Upscope, document);
 
   Upscope("init");
+
+  Upscope("updateConnection", {
+    // Set the  user name or email below (e.g. ["John Smith", "john.smith@acme.com"]).
+    identities: ["pablobfonseca@protonmail.com"],
+  });
 </script>
