@@ -68,5 +68,7 @@
     uniqueId: "FOOBAR",
   });
 
-  Upscope("on", "observerContentVisible", console.log);
+  Upscope("on", "observerContentVisible", () => {
+    console.log("content is visible");
+  });
 </script>
